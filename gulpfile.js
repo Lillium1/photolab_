@@ -26,13 +26,13 @@ gulp.task('style', function(){
 
 //crear servidor web de desarrollo en localhost puerto 8000
 gulp.task('webserver', function(){
-	gulp.src('../photolab/')
+	gulp.src('../photolab_/')
 		.pipe(webserver({
 			fallback: 'index.html',
 			livereload: true,
 			directoryListing: false,
 			open: true,
-			port: 8001
+			port: 8002
 		}));
 });
 
